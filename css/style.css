@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft: hsl(300, 69%, 71%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: var(--violet);
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        background-image: url(/images/bg-mobile.svg);
+        background-size: contain;
+    }
+}
+
+.mockup img {
+    width: 100%;
+}
+
+div.logo{
+    content:url("/images/logo.svg"); 
+    width: 9.3em;
+    margin-bottom: 5em;
+    
+}
+
+.desc h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+
+    color: #FFFDFF;
+
+}
+
+.desc p {
+    color: #f7f3f7e3;
+    font-size: 1.102rem;
+    letter-spacing: 0.3px;
+    line-height: 1.7rem;
+    
+    
+}
+
+.btn {
+    border: none;
+    width: 240px;
+    height: 46px;
+    border-radius: 60px;
+    background-color: #fff;
+    color: #8065ccc2;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0px 10px 20px rgba(53, 51, 51, 0.705), 10px 0px 20px rgba(26, 25, 25, 0.295);
+}
+
+.btn:hover, .btn:active {
+    background-color: var(--soft);
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+.social a {
+    color: white;
+    margin:0.5em;
+    
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover {
+    color: var(--soft);
+    border-color: var(--soft);
+    transition: all 0.2s linear;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    border: 1px solid white;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    padding: 10px 14px 10px 13px;
+}
+
+.fa-twitter {
+    padding: 10px;
+}
+
+.fa-instagram {
+    padding: 10px 12px 10px 12px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 40px 0px 44px;
+}
+
+.main {
+    margin-bottom: 5em;
+}
+
+.main .mockup {
+    margin-bottom: 4em;
+}
+
+.main .desc {
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.attribution {
+    transform: translateY(10px);
+}
+
+
+@media screen and (min-width:1100px){
+
+    div.logo {
+        width: 13em;
+    }
+
+    .container {
+        margin: 58px 75px 2px 73px;
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .mockup {
+        margin-left:-0.1em;
+        padding-top: 0.2em;
+        min-width: 710px;
+        
+    }
+
+    .desc h1 {
+        font-size: 2.5rem;
+    }
+
+    .main .desc {
+        padding: 1em 0.5em 0 3em;
+        text-align: initial;   
+    
+    }
+
+    .main, .main .mockup {
+        margin-bottom: 0;
+    }
+
+    .btn {
+        width: 200px;
+        height: 56px;
+        font-weight: 700;
+    }
+
+    .social {
+        justify-content: flex-end;
+    }
+
+    .attribution {
+        transform: translateY(80px);
+    }
+
+
+}
+
+
+
+
+
